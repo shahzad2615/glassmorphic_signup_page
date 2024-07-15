@@ -1,0 +1,103 @@
+
+/* universal selector all content should be change if you use universal selector */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"lato", sans-serif;
+}
+.outer-box{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top left,aqua,aqua);
+   
+}
+.inner-box{
+    background-color: white;
+    border-radius: 10px;
+   
+   width: 400px;
+   margin:0 auto;
+   position: relative;
+   top: 50%;
+   /* it means it will go to above 50% from the inner boxes */
+   transform: translateY(-50%);
+   padding: 20px 40px;
+   border: 1px solid #ccc;
+   box-shadow: 5px 10px 10px  #3498db;
+   z-index: 2;
+   backgrou 
+   backdrop-filter:blur(8px);
+ 
+}
+.signup-header h1{
+    /* default size of h1 is 2 rem */
+    font-size: 2.5rem;
+    color: #212121;
+}
+.signup-header p{
+    font-size: 0.8rem;
+    color:#555;
+}
+.signup-body{
+    margin: 20px 0;
+
+}
+.signup-body p{
+    margin: 10px 0;
+}
+.signup-body p label{
+   display:block
+    font-weight: bold;
+    
+}
+.signup-body p input{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #cccc;
+    border-radius: 7px;
+
+
+}
+/* This is one more way to call id  */
+/* #submit{
+    background-color: #3498db;
+    
+} */
+ .signup-body p input[type="submit"]{
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+ }
+ .signup-body p input[type="submit"]:hover{
+    background-color: #1f4d6b;
+ }
+ .signup-footer p{
+    color: #555;
+    text-align: center;
+
+ }
+ .signup-footer p a{
+    color: blue;
+ }
+ .circle{
+    height: 200px;
+    width:200px;
+    border-radius: 100px;
+    background:linear-gradient(to top left,#ffff,#ffffff);
+    position: absolute;
+ }
+ .c1{
+    top:100px;
+    left:50px;
+ }
+ .c2{
+    bottom: 200px;
+    right: 50px;
+ }
